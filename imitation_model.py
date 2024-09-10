@@ -1,6 +1,7 @@
 import random
 import numpy as np
 from prettytable import PrettyTable
+
 class ImitationModel:
     def __init__(self,n : int, p : list, q : list , coef1 : list, coef2 : list,f1_static : bool):
         self.number_of_games = n

@@ -58,7 +58,7 @@ class Graphics:
         graph.plot(x, y, linestyle=style, linewidth=width, color=color)
 
     def draw_generated_pq_points(self, points : list):
-        windows_size = (10, 10)
+        windows_size = (5, 5)
         plt.figure(figsize=windows_size)
         pq_points_graph = plt.gca()
 
@@ -70,7 +70,7 @@ class Graphics:
 
 
     def draw_pareto(self, fpq_points : list, status_quo_point : tuple):
-        windows_size = (9, 9)
+        windows_size = (5, 5)
         plt.figure(figsize=windows_size)
         pareto_graph = plt.gca()
 
@@ -92,7 +92,7 @@ class Graphics:
         plt.plot(status_quo_point[0], status_quo_point[1], 'm.', markersize=self.__dotsize)
 
     def draw_model(self, n : int,  res : dict, avg : float, f1_static : bool):
-        windows_size = (9, 9)
+        windows_size = (5, 5)
         plt.figure(figsize=windows_size)
         model_graph = plt.gca()
 
